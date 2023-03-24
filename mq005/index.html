@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/style.css">
+  <title>Media query</title>
+</head>
+<body>
+  <header>
+    <h1>Meu site</h1>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <menu id="items">
+      <ul>
+        <li><a href="#">opção1</a></li>
+        <li><a href="#">opção2</a></li>
+        <li><a href="#">opção3</a></li>
+        <li><a href="#">opção4</a></li>
+        <li><a href="#">opção5</a></li>
+      </ul>
+    </menu>
+  </header>
+  <main>
+    <article>
+      <h2>Testando media queries</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde amet eos fugit libero nostrum, vero deserunt! In at aspernatur nam, dolore suscipit, modi voluptates deserunt magni ab sed impedit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde amet eos fugit libero nostrum, vero deserunt! In at aspernatur nam, dolore suscipit, modi voluptates deserunt magni ab sed impedit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde amet eos fugit libero nostrum, vero deserunt! In at aspernatur nam, dolore suscipit, modi voluptates deserunt magni ab sed impedit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde amet eos fugit libero nostrum, vero deserunt! In at aspernatur nam, dolore suscipit, modi voluptates deserunt magni ab sed impedit.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa unde amet eos fugit libero nostrum, vero deserunt! In at aspernatur nam, dolore suscipit, modi voluptates deserunt magni ab sed impedit.</p>
+    </article>
+  </main>
+
+  <script>
+    function clickMenu(){
+      const i = document.querySelector('i')
+      if(items.style.display === 'block'){
+        items.style.display = 'none'
+        i.textContent = 'menu'
+      } else{
+        items.style.display = 'block'
+        i.textContent = 'X'
+      }
+    }
+  </script>
+</body>
+</html>
